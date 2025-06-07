@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Pair</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button-container a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007BFF; /* Button color */
+            color: #fff; /* Text color */
+            border: 1px solid #007BFF; /* Border color */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3; /* Darker button color on hover */
+            border-color: #0056b3; /* Darker border color on hover */
+        }
+    </style>
+</head>
+<body>
+<h1>Create Key Pairs, Add them to Java Key Store and Download it</h1>
+<br>
+<div class="button-container">
+
+    <a th:href="@{/createKeyStore}">Generate</a>
+
+</div>
+</body>
+</html>
